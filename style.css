@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.body {
+  margin: 0;
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul>li {
+  list-style: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  padding: 0px;
+  background-color: black;
+
+}
+
+.title {
+  color: white;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////*/
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+#table-column-main {
+  height: 1100px;
+  background-color: grey;
+  width: 500px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  margin: 10px;
+}
+
+.diagram-title {
+  font-size: 50px;
+}
+
+#list {
+  margin: 0 auto;
+  max-width: 450px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.priname {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+  background-color: white;
+  padding: 10px;
+}
+
+.canvas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+}
+
+.unit {
+  fill: none;
+  stroke-width: 10;
+}
+
+.unit:nth-child(1) {
+  stroke: #009b3e;
+  stroke-dasharray: 10 100
+}
+
+.unit:nth-child(2) {
+  stroke: #0369b3;
+  stroke-dasharray: 19 100;
+  stroke-dashoffset: -8;
+}
+
+.unit:nth-child(3) {
+  stroke: #fffb00;
+  stroke-dasharray: 11 100;
+  stroke-dashoffset: -19;
+}
+
+.unit:nth-child(4) {
+  stroke: #da6969;
+  stroke-dasharray: 21 100;
+  stroke-dashoffset: -26;
+}
+
+.unit:nth-child(5) {
+  stroke: #9e0069;
+  stroke-dasharray: 33 100;
+  stroke-dashoffset: -47;
+}
+
+.unit:nth-child(6) {
+  stroke: #00595c;
+  stroke-dasharray: 24 100;
+  stroke-dashoffset: -77;
+}
+
+.legend {
+  max-width: 250px;
+  margin-left: 30px;
+}
+
+.caption-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.caption-item {
+  position: relative;
+
+  margin: 20px 0;
+  padding-left: 30px;
+
+  font-family: "Verdana", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #591d48;
+  cursor: pointer;
+}
+
+.caption-item:hover {
+  opacity: 0.8;
+}
+
+.caption-item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 8px;
+}
+
+.caption-item:nth-child(1)::before {
+  background-color: #009b3e;
+}
+
+.caption-item:nth-child(2)::before {
+  background-color: #0369b3;
+}
+
+.caption-item:nth-child(3)::before {
+  background-color: #fffb00;
+}
+
+.caption-item:nth-child(4)::before {
+  background-color: #da6969;
+}
+
+.caption-item:nth-child(5)::before {
+  background-color: #9e0069;
+}
+
+.caption-item:nth-child(6)::before {
+  background-color: #00595c;
+}
+
+.caption-item {
+  align-items: center;
+
+
+}
+
+.legend__dasc {
+  font-size: 25px;
+  color: rgb(12, 92, 171);
+}
+
+.legend__prise {
+  font-size: 20px;
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////*/
+#table-column {
+  flex: 1;
+  height: 1100px;
+  background-color: grey;
+  width: 300px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.table__row {
+  background-color: black;
+  height: 25px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.editor__row {
+
+  padding-bottom: 10px;
+}
+
+
+
+.table {
+  width: 100%;
+
+
+}
+
+p {
+  margin: 0;
+}
+
+.name {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.category {
+  padding-right: 10px;
+}
+
+.price {
+  padding-right: 10px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////*/
+#editor-column {
+  height: 800px;
+  width: 500px;
+  background-color: grey;
+  height: 1100px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  margin: 10px;
+}
+
+.editor__imput-name {
+  font-size: 30px;
+
+}
+
+.editor__input {
+  border-radius: 15px;
+  border: solid 1px white;
+  width: 300px;
+  height: 22px;
+  font-size: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  border: solid 1px white;
+  border-radius: 20px;
+  width: 150px;
+  height: 70px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+  background-color: white;
+  padding: 10px;
+}
